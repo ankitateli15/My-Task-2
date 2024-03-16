@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <app-one></app-one>
+          
+        </div>
+        <div class="col-6">
+            <app-two></app-two>
+        </div>
+    </div>
+</div>
+<app-three></app-three>
+<app-four [getDataFromParent]="title" *ngIf="showFour"></app-four>
+<button class="btn btn-info btn-sm" (click)="changeTitleValue()"> click to change title</button>
+<button class="btn btn-info btn-sm" (click)= "changeTitleValueAgain()"> click to change title again</button>
+<button class="btn btn-danger btn-sm" (click)="removeShowValue()"> click to remove four component</button>
